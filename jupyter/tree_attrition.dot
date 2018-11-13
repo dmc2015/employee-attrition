@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="OverTimeBool <= 0.5\ngini = 0.27\nsamples = 1470\nvalue = [1233, 237]"] ;
+1 [label="TotalWorkingYears <= 2.5\ngini = 0.187\nsamples = 1054\nvalue = [944, 110]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.442\nsamples = 88\nvalue = [59, 29]"] ;
+1 -> 2 ;
+3 [label="gini = 0.154\nsamples = 966\nvalue = [885, 81]"] ;
+1 -> 3 ;
+4 [label="MonthlyIncome <= 2475.0\ngini = 0.424\nsamples = 416\nvalue = [289, 127]"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.423\nsamples = 69\nvalue = [21, 48]"] ;
+4 -> 5 ;
+6 [label="gini = 0.352\nsamples = 347\nvalue = [268, 79]"] ;
+4 -> 6 ;
+}
